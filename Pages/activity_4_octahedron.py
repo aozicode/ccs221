@@ -5,6 +5,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
 from scipy.spatial import Delaunay
 import tensorflow as tf
+import streamlit as st
 
 def plt_basic_object_(points):
     tri=Delaunay(points).convex_hull
@@ -14,7 +15,7 @@ def plt_basic_object_(points):
     ax.set_xlim3d(-6,6)
     ax.set_ylim3d(-6,6)
     ax.set_zlim3d(-6,6)
-    plt.show()
+    st.pyplot (fig) 
 
 def octahedron_(side=8, bottom_lower=(0, 0,-2)):
     side = side / np.sqrt(2)  
