@@ -4,6 +4,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
 from scipy.spatial import Delaunay
 import tensorflow as tf
+import streamlit as st
 
 def plt_basic_object(points):
     
@@ -16,7 +17,7 @@ def plt_basic_object(points):
     ax.set_xlim3d(-5,5)
     ax.set_ylim3d(-5,5)
     ax.set_zlim3d(-5,5)
-    plt.show()
+    st.pyplot (fig)
     
 def rectangle(bottom_lower=(-2,-1,-2), side_lengths=(5, 3, 4)):
     
